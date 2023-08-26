@@ -87,6 +87,8 @@ body{
     letter-spacing: 2px;
 }
 
+/* Social networks */
+
 .social-networks{
     height: 170px;
     background-image: url(../assets/img/pattern-hills.svg);
@@ -115,6 +117,107 @@ body{
 .social-networks ul li a ion-icon:is(:hover, :focus){
     color: var(--soft-red);
 }
+
+@media (min-width: 600px){
+    /* Main container */
+    .main-container{
+        width: 540px;
+        margin: 235px auto;
+    }
+
+    /* Countdown title */
+    .countdown__date{
+        justify-content: center;
+        column-gap: 2rem;
+    }
+
+    /* Social networks */
+
+    .social-networks{
+        background-position-x: -15rem;
+    }
+}
+
+@media (min-width: 768px){
+    /* Main container */
+    .main-container{
+        width: 700px;
+    }
+
+    /* Countdown title */
+    .countdown__title h1{
+        font-size: 24px;
+    }
+    
+    .countdown__date > div{
+        width: 120px;
+        height: 130px;
+    }
+
+    .countdown__date-number{
+        height: 100px;
+    }
+
+    .countdown__date-number p{
+        font-size: 50px;
+    }
+
+    .countdown__date-text{
+        font-size: 12px;
+    }
+
+    /* Social networks */
+    .social-networks{
+        background-position-x: -10rem;
+    }
+}
+
+@media (min-width: 1024px){
+    /* Main container */
+    .main-container{
+        width: 1000px;
+    }
+
+    /* Countdown title */
+    .countdown__title h1{
+        font-size: 28px;
+    }
+    
+    .countdown__date > div{
+        width: 150px;
+        height: 186px; 
+    }
+
+    .countdown__date-number{
+        height: 138px;
+    } 
+
+    .countdown__date-number p{
+        font-size: 66px;
+    }
+
+    .countdown__date-text{
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+
+    /* Social networks */
+    .social-networks{
+        background-position-x: 0.5rem;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
