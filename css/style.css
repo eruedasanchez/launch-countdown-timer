@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+/* Variables */
+
+:root{
+    /* Colors */
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-mostly-blue: hsl(234, 17%, 12%);
+
+    /* Typography */
+    --font-size: 14px;
+}
+
+body{
+    background-color: var(--very-dark-mostly-blue);
+    background-image: url(../assets/img/bg-stars.svg);
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: var(--font-size);
+}
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+
+.main-container{
+    width: 344px;
+    margin: 222px auto;
+}
+
+/* Countdown title */
+
+.countdown__title{
+    margin-bottom: 55px;
+}
+
+.countdown__title h1{
+    color: var(--white);
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 26px;
+}
+
+.countdown__date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.countdown__date > div{
+    width: 75px;
+    height: 105px;
+}
+
+.countdown__date-number{
+    height: 70px;
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 4px var(--very-dark-mostly-blue);
+    margin-bottom: 10px;
+}
+
+.countdown__date-number p{
+    font-size: 40px;
+    color: var(--soft-red);
+}
+
+.countdown__date-text{
+    font-size: 8px;
+    color: var(--grayish-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-networks{
+    height: 170px;
+    background-image: url(../assets/img/pattern-hills.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -41rem;
+    padding-top: 95px;
+}
+
+.social-networks ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+}
+
+.social-networks ul li{
+    list-style: none;
+}
+
+.social-networks ul li a ion-icon{
+    width: 28px;
+    height: 28px;
+    color: var(--grayish-blue);
+}
+
+.social-networks ul li a ion-icon:is(:hover, :focus){
+    color: var(--soft-red);
+}
+
+
+
+
